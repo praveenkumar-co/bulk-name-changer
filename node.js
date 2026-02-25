@@ -7,6 +7,7 @@ const replaceWith = "praveen";
 //fs.readdir(path, callback): Reads the contents of the directory specified by path
 //__dirname + "/data": Constructs the path to the data directory.
 fs.readdir(__dirname + "/data", (err, files) => {  
+   // checking for error logging 
    if (err) {
       console.log("Error reading directory:", err);
       return;
@@ -27,4 +28,4 @@ fs.readdir(__dirname + "/data", (err, files) => {
          }
       });
    }
-});
+});   
